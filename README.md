@@ -8,10 +8,10 @@ A full-stack application built as part of the Flexmoney Internship Assignment. T
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [ER Diagram](#er-diagram)
+- [Approach](#approach)
 - [Installation & Setup](#installation--setup)
 - [Deployment](#deployment)
 - [Assumptions](#assumptions)
-- [Approach](#approach)
 
 
 ## Screenshots
@@ -89,6 +89,16 @@ Below is the ER diagram representing the database design:
 
 ![ER Diagram](docs/ER-diagram.png)
 
+## Approach
+**Backend:**
+Built using Node.js, Express, and MongoDB to manage user data, enrollments, and payments. Security is enhanced with JWT authentication and bcrypt for password hashing. The ER diagram reflects the relationships among Users, Enrollments, and Payments.
+
+**Frontend:**
+Developed with React and styled using Tailwind CSS for a responsive, modern UI. React Router v6 is used for navigation, and the design includes personalized elements for Flexmoney.
+
+**Deployment:**
+The backend is hosted on Render and the frontend on Vercel. Environment variables and API endpoints have been configured accordingly.
+
 ## Installation & Setup
 
  **Backend Setup**
@@ -146,14 +156,3 @@ URL: https://yoga-admission.vercel.app/
 - A user can enroll only once per month, but may change batches next month.
 - Tailwind CSS is used for styling to give a modern, professional look.
 - Personalized branding with the Flexmoney logo and headers is added to tailor the solution for Flexmoney.
-
-## Approach
-**Backend:**
-Built using Node.js, Express, and MongoDB to manage user data, enrollments, and payments. Security is enhanced with JWT authentication and bcrypt for password hashing. The ER diagram reflects the relationships among Users, Enrollments, and Payments.
-
-**Frontend:**
-Developed with React and styled using Tailwind CSS for a responsive, modern UI. React Router v6 is used for navigation, and the design includes personalized elements for Flexmoney.
-
-**Deployment:**
-The backend is hosted on Render and the frontend on Vercel. Environment variables and API endpoints have been configured accordingly.
-
