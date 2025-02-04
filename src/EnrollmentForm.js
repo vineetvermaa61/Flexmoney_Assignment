@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 const EnrollmentForm = () => {
   const [batch, setBatch] = useState("6-7AM");
   const [message, setMessage] = useState('');
@@ -10,7 +9,7 @@ const EnrollmentForm = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/enroll', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/enroll`, {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
