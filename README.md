@@ -1,4 +1,5 @@
 # Yoga Admission Project
+This project is a web application for managing Yoga class admissions. It allows users to register, select a batch, and process payments for a monthly fee of Rs 500. Built with React for the frontend and a REST API backend, it validates user data, stores details in a database, and integrates a mock payment function.
 
 [User]
   - user_id (PK)
@@ -23,3 +24,12 @@
   - transactionId
   - status (success/failed)
   - paymentDate
+
+
+Screenshots
+
+![alt text](/Screenshots/1.png)
+![alt text](/Screenshots/2.png)
+![alt text](/Screenshots/3.png)
+![alt text](/Screenshots/4.png)
+![alt text](/Screenshots/4.png)
