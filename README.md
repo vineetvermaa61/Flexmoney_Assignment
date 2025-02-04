@@ -1,20 +1,26 @@
 # Flexmoney Yoga Admission System
 
-![Flexmoney Logo](docs/flexmoney_logo.png)
-
 A full-stack application built as part of the Flexmoney Internship Assignment. This project allows users (aged 18–65) to enroll for monthly yoga classes by selecting from four available batches. The application includes user authentication (signup/login) and simulates monthly payment processing via a mock payment function. Once enrolled, users can view their enrollment details—including the monthly fee, plan expiry date, and a visual payment indicator—on their profile page.
 
 ## Table of Contents
 
+- [Screenshots](#screenshots)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [ER Diagram](#er-diagram)
 - [Installation & Setup](#installation--setup)
 - [Deployment](#deployment)
-- [Screenshots](#screenshots)
 - [Assumptions](#assumptions)
 - [Approach](#approach)
-- [License](#license)
+
+
+## Screenshots
+
+![alt text](/Screenshots/1.png)
+![alt text](/Screenshots/2.png)
+![alt text](/Screenshots/3.png)
+![alt text](/Screenshots/4.png)
+![alt text](/Screenshots/5.png)
 
 ## Features
 
@@ -81,14 +87,11 @@ Below is the ER diagram representing the database design:
   - status (success/failed)
   - paymentDate
 
-
-*You can also include an image of the ER diagram (e.g., `docs/ER-diagram.png`):*
-
 ![ER Diagram](docs/ER-diagram.png)
 
 ## Installation & Setup
 
-### Backend Setup
+ **Backend Setup**
 
 1. **Clone the Repository:**
 
@@ -96,53 +99,61 @@ Below is the ER diagram representing the database design:
    git clone https://github.com/vineetvermaa61/Flexmoney_Assignment/server.git
    cd server
 
-## Install Dependencies:
+**Install Dependencies:**
 npm install
 
-## Configure Environment Variables:
+**Configure Environment Variables:**
 Create a .env file in the root directory and add:
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=yourSecretKeyHere
 
-## Run the Server:
+**Run the Server:**
 npm start
 
 The server will start on http://localhost:5000.
 
-## Frontend Setup
+**Frontend Setup**
 Clone the Repository:
 git clone https://github.com/vineetvermaa61/Flexmoney_Assignment.git
 cd Flexmoney_Assignment
 
-## Install Dependencies:
+**Install Dependencies:**
 npm install
 
-## Configure Tailwind CSS:
+**Configure Tailwind CSS:**
 Ensure that tailwind.config.js and src/index.css are set up as described.
 
-## Run the Application:
+**Run the Application:**
 npm start
 
 The app will be available on http://localhost:3000.
 
 ## Deployment
-## Backend:
+**Backend:**
 Deployed on Render.
 URL: https://flexmoney-assignment-47gl.onrender.com
 
-Frontend:
+**Frontend:**
 Deployed on Vercel.
-URL: https://yoga-frontend.vercel.app
+URL: https://yoga-admission.vercel.app/
 
 
+## Assumptions
+- The monthly fee is fixed at INR 500.
+- Users are eligible only if their age is between 18 and 65.
+- Payment is simulated using a mock function (CompletePayment()), with no real payment integration.
+- A user can enroll only once per month, but may change batches next month.
+- Tailwind CSS is used for styling to give a modern, professional look.
+- Personalized branding with the Flexmoney logo and headers is added to tailor the solution for Flexmoney.
 
-Screenshots
+## Approach
+**Backend:**
+Built using Node.js, Express, and MongoDB to manage user data, enrollments, and payments. Security is enhanced with JWT authentication and bcrypt for password hashing. The ER diagram reflects the relationships among Users, Enrollments, and Payments.
 
-![alt text](/Screenshots/1.png)
-![alt text](/Screenshots/2.png)
-![alt text](/Screenshots/3.png)
-![alt text](/Screenshots/4.png)
-![alt text](/Screenshots/5.png)
+**Frontend:**
+Developed with React and styled using Tailwind CSS for a responsive, modern UI. React Router v6 is used for navigation, and the design includes personalized elements for Flexmoney.
 
+**Deployment:**
+The backend is hosted on Render and the frontend on Vercel. Environment variables and API endpoints have been configured accordingly.
 
