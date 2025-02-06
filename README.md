@@ -117,21 +117,26 @@ The backend is hosted on Render and the frontend on Vercel. Environment variable
 
 3. **Configure Environment Variables:**
 Create a .env file in the root directory and add:
-  ```bash
+   ```bash
    PORT=5000
    MONGO_URI=your_mongodb_connection_string
    JWT_SECRET=yourSecretKeyHere
+   ```
 
 4. **Run the Server:**
    ```bash
    npm start
+   ```
+
 
 The server will start on http://localhost:5000.
 
 **Frontend Setup**
 Clone the Repository:
+```bash
 git clone https://github.com/vineetvermaa61/Flexmoney_Assignment.git
 cd Flexmoney_Assignment
+```
 
 **Install Dependencies:**
 npm install
