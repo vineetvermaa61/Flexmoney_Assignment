@@ -157,13 +157,13 @@ The app will be available on http://localhost:3000.
 **Backend:**
 Deployed on Render.
 ```bash
-URL: https://flexmoney-assignment-47gl.onrender.com
+https://flexmoney-assignment-47gl.onrender.com
 ```
 
 **Frontend:**
 Deployed on Vercel.
 ```bash
-URL: https://yoga-admission.vercel.app/
+https://yoga-admission.vercel.app/
 ```
 
 
