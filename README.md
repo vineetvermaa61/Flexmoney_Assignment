@@ -63,6 +63,8 @@ A full-stack application built as part of the Flexmoney Internship Assignment. T
 
 Below is the ER diagram representing the database design:
 
+![ER Diagram](Screenshots/ER_Diagram.jpg)
+
 [User]
   - user_id (PK)
   - name
@@ -87,7 +89,7 @@ Below is the ER diagram representing the database design:
   - status (success/failed)
   - paymentDate
 
-![ER Diagram](docs/ER-diagram.png)
+
 
 ## Approach
 **Backend:**
@@ -109,17 +111,20 @@ The backend is hosted on Render and the frontend on Vercel. Environment variable
    git clone https://github.com/vineetvermaa61/Flexmoney_Assignment/server.git
    cd server
 
-**Install Dependencies:**
-npm install
+2. **Install Dependencies:**
+   ```bash
+   npm install
 
-**Configure Environment Variables:**
+3. **Configure Environment Variables:**
 Create a .env file in the root directory and add:
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=yourSecretKeyHere
+  ```bash
+   PORT=5000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=yourSecretKeyHere
 
-**Run the Server:**
-npm start
+4. **Run the Server:**
+   ```bash
+   npm start
 
 The server will start on http://localhost:5000.
 
