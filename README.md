@@ -139,24 +139,32 @@ cd Flexmoney_Assignment
 ```
 
 **Install Dependencies:**
+```bash
 npm install
+```
 
 **Configure Tailwind CSS:**
 Ensure that tailwind.config.js and src/index.css are set up as described.
 
 **Run the Application:**
+```bash
 npm start
+```
 
 The app will be available on http://localhost:3000.
 
 ## Deployment
 **Backend:**
 Deployed on Render.
+```bash
 URL: https://flexmoney-assignment-47gl.onrender.com
+```
 
 **Frontend:**
 Deployed on Vercel.
+```bash
 URL: https://yoga-admission.vercel.app/
+```
 
 
 ## Assumptions
